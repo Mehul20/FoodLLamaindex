@@ -19,5 +19,5 @@ documents = loader.load_data(file=Path('./restaurants.csv'))
 
 index = VectorStoreIndex.from_documents(documents)
 query_engine = index.as_query_engine()
-response = query_engine.query("Some Italian Restaurants In Atlanta?")
+response = query_engine.query("Best Italian Restaurants In Atlanta?")
 print(response)
